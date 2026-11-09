@@ -1,0 +1,12 @@
+[repository]
+name = "hypr-float-memory"
+authors = ["andrew"]
+
+[hypr-float-memory]
+description = "Remember manually resized floating windows across sessions"
+authors = ["andrew"]
+output = "build/hypr-float-memory.so"
+build = [
+    "cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DHFM_NATIVE_ARCH=ON -DHFM_ENABLE_LTO=ON -DBUILD_TESTING=OFF -DBUILD_INTEGRATION_DRIVER=OFF",
+    "cmake --build build -j2"
+]

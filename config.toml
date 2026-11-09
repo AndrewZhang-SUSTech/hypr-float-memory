@@ -1,0 +1,4 @@
+[retention]
+# Remove records unused for more than this many days when the plugin loads.
+# Range: 0..36500. Zero disables expiry. One day is exactly 86400 seconds.
+max_age_days = 30
